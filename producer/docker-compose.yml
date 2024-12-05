@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  producer:
+    build: .
+    networks:
+      - kafka_kafka_network 
+
+networks:
+  kafka_kafka_network:
+    external: true 
